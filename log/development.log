@@ -1,0 +1,62 @@
+Started GET "/workers/start" for ::1 at 2021-04-05 18:19:21 +0200
+Processing by WorkersController#start as */*
+Completed 200 OK in 4ms (Allocations: 1264)
+
+
+Started GET "/workers/start" for ::1 at 2021-04-05 18:19:57 +0200
+Processing by WorkersController#start as */*
+Completed 200 OK in 2ms (Allocations: 196)
+
+
+Started GET "/cable?client_id=a8687a45-a51e-4e7e-aa34-39519e2211be" for ::1 at 2021-04-05 18:22:49 +0200
+Started GET "/cable/?client_id=a8687a45-a51e-4e7e-aa34-39519e2211be" [WebSocket] for ::1 at 2021-04-05 18:22:49 +0200
+Request origin not allowed: 
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/?client_id=a8687a45-a51e-4e7e-aa34-39519e2211be" [WebSocket] for ::1 at 2021-04-05 18:22:49 +0200
+Started GET "/cable?client_id=3217d149-68f7-4152-a153-f766eb375c4e" for ::1 at 2021-04-05 18:26:25 +0200
+Started GET "/cable/?client_id=3217d149-68f7-4152-a153-f766eb375c4e" [WebSocket] for ::1 at 2021-04-05 18:26:25 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: upgrade, HTTP_UPGRADE: websocket)
+Registered connection (3217d149-68f7-4152-a153-f766eb375c4e)
+Finished "/cable/?client_id=3217d149-68f7-4152-a153-f766eb375c4e" [WebSocket] for ::1 at 2021-04-05 18:26:35 +0200
+Started GET "/cable?client_id=b9140a68-febf-47cd-8849-6813761788ce" for ::1 at 2021-04-05 18:28:24 +0200
+Started GET "/cable/?client_id=b9140a68-febf-47cd-8849-6813761788ce" [WebSocket] for ::1 at 2021-04-05 18:28:24 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: upgrade, HTTP_UPGRADE: websocket)
+Registered connection (b9140a68-febf-47cd-8849-6813761788ce)
+WorkerChannel is transmitting the subscription confirmation
+WorkerChannel is streaming from worker:client_b9140a68-febf-47cd-8849-6813761788ce
+Started GET "/workers/start?client_id=b9140a68-febf-47cd-8849-6813761788ce" for ::1 at 2021-04-05 18:28:24 +0200
+Processing by WorkersController#start as */*
+  Parameters: {"client_id"=>"b9140a68-febf-47cd-8849-6813761788ce"}
+Completed 200 OK in 3ms (Allocations: 1189)
+
+
+Finished "/cable/?client_id=b9140a68-febf-47cd-8849-6813761788ce" [WebSocket] for ::1 at 2021-04-05 18:28:36 +0200
+WorkerChannel stopped streaming from worker:client_b9140a68-febf-47cd-8849-6813761788ce
+Started GET "/cable?client_id=51d9a54a-bb14-4e5b-931f-c6945291ae5a" for ::1 at 2021-04-05 18:30:50 +0200
+Started GET "/cable/?client_id=51d9a54a-bb14-4e5b-931f-c6945291ae5a" [WebSocket] for ::1 at 2021-04-05 18:30:50 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: upgrade, HTTP_UPGRADE: websocket)
+Registered connection (51d9a54a-bb14-4e5b-931f-c6945291ae5a)
+WorkerChannel is transmitting the subscription confirmation
+WorkerChannel is streaming from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a
+Started GET "/workers/start?client_id=51d9a54a-bb14-4e5b-931f-c6945291ae5a" for ::1 at 2021-04-05 18:30:50 +0200
+Processing by WorkersController#start as */*
+  Parameters: {"client_id"=>"51d9a54a-bb14-4e5b-931f-c6945291ae5a"}
+Completed 200 OK in 2ms (Allocations: 1197)
+
+
+[ActionCable] Broadcasting to worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a: {:type=>:worker_started, :total=>5}
+WorkerChannel transmitting {"type"=>"worker_started", "total"=>5} (via streamed from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a)
+[ActionCable] Broadcasting to worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a: {:type=>:worker_progress, :progress=>1}
+WorkerChannel transmitting {"type"=>"worker_progress", "progress"=>1} (via streamed from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a)
+[ActionCable] Broadcasting to worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a: {:type=>:worker_progress, :progress=>2}
+WorkerChannel transmitting {"type"=>"worker_progress", "progress"=>2} (via streamed from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a)
+[ActionCable] Broadcasting to worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a: {:type=>:worker_progress, :progress=>3}
+WorkerChannel transmitting {"type"=>"worker_progress", "progress"=>3} (via streamed from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a)
+[ActionCable] Broadcasting to worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a: {:type=>:worker_progress, :progress=>4}
+WorkerChannel transmitting {"type"=>"worker_progress", "progress"=>4} (via streamed from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a)
+[ActionCable] Broadcasting to worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a: {:type=>:worker_progress, :progress=>5}
+[ActionCable] Broadcasting to worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a: {:type=>:worker_done}
+WorkerChannel transmitting {"type"=>"worker_progress", "progress"=>5} (via streamed from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a)
+WorkerChannel transmitting {"type"=>"worker_done"} (via streamed from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a)
+Finished "/cable/?client_id=51d9a54a-bb14-4e5b-931f-c6945291ae5a" [WebSocket] for ::1 at 2021-04-05 18:31:00 +0200
+WorkerChannel stopped streaming from worker:client_51d9a54a-bb14-4e5b-931f-c6945291ae5a
